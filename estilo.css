@@ -1,0 +1,548 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    to right,
+    rgb(221, 74, 72),
+    rgb(245, 238, 220),
+    rgb(221, 74, 72)
+  );
+  background-size: 400% 400%;
+  animation: animate-background 10s infinite ease-in-out;
+}
+
+@keyframes animate-background {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+nav {
+  width: 90%;
+  height: 100px;
+  margin: 20px auto;
+  background-color: rgb(194, 16, 16);
+  /* background-image: url("./imagen/mp.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -10px; */
+  border-radius: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo a img {
+  width: 140px;
+  height: 120px;
+  margin-left: 15px;
+}
+
+.menu {
+  list-style-type: none;
+  background-color: #ffffff;
+  border-radius: 45px;
+  padding: 0;
+  width: 60%;
+  margin: 20px auto;
+}
+
+.menu .item {
+  display: inline-block;
+  position: relative;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.menu .submenu {
+  position: absolute;
+  display: none;
+  width: 149px;
+}
+
+.menu .submenu a {
+  width: 100%;
+  color: white !important;
+}
+
+.menu .submenu .sub_m {
+  display: block;
+  font-size: 0.8rem;
+  padding: auto;
+}
+
+.menu .item a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bolder;
+  display: inline-block;
+  padding: 20px;
+}
+
+.menu .item a:hover {
+  color: white;
+}
+
+.menu .item:hover .submenu {
+  display: block;
+  color: rgb(13, 14, 9);
+}
+
+.menu .item:hover a {
+  background-color: rgb(194, 16, 16);
+  border-radius: 45px;
+}
+
+nav .buscador {
+  width: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+  border-radius: 20px;
+}
+
+#barra_busqueda {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 45px;
+}
+
+#barra_busqueda input {
+  background: transparent;
+  color: #ab46d2;
+  flex: 1;
+  border: 0;
+  outline: none;
+  margin: 15px;
+}
+
+#barra_busqueda button img {
+  width: 20px;
+}
+
+#barra_busqueda button {
+  border: 0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background: rgb(194, 16, 16);
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.seccion1 {
+  width: 90%;
+  height: 500px;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-around;
+  margin: 50px auto;
+}
+
+#caja1 {
+  background-color: #ffffff39;
+  height: 500px;
+  width: 50rem;
+  border-radius: 25px;
+}
+
+#caja1 h2 {
+  display: flex;
+  justify-content: center;
+  color: rgb(194, 16, 16);
+  margin-top: 15px;
+}
+
+#cajadefoto {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#cajadefoto img {
+  height: 400px;
+  width: 100rem;
+  margin: 20px 50px;
+}
+
+#cajadefoto p {
+  color: #fcf69c;
+  text-shadow: 0 0 10px #036654;
+  font-size: 20px !important;
+  width: 200%;
+  text-align: justify;
+  margin-right: 40px;
+}
+
+#formulario {
+  width: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff39;
+  border-radius: 25px;
+}
+
+#formulario form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#formulario .registro {
+  width: 270px;
+  font-size: 25px;
+  background: #ffffff;
+  color: #ab46d2;
+  flex: 1;
+  border-radius: 25px;
+  outline: none;
+  margin: 15px;
+  border: none;
+  padding-left: 15px;
+}
+
+#formulario label {
+  font-size: 25px;
+}
+
+#formulario h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+#enviar {
+  cursor: pointer;
+  font-size: 20px !important;
+  background-color: rgb(194, 16, 16) !important;
+  width: 170px !important;
+  color: white !important;
+  margin: 20px auto !important;
+  border: none;
+  border-radius: 15px;
+}
+
+.seccion2 img {
+  width: 300px;
+  height: 200px;
+  border: 2px double rgb(128, 128, 128);
+  margin: 20px;
+}
+
+.seccion2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.seccion2 img:hover {
+  border: 2px solid white;
+}
+
+.seccion2 h1 {
+  text-align: center;
+  width: 100%;
+}
+
+.seccion2 h4 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.seccion2 div {
+  background-color: #ffffff39;
+  margin: 20px 10px;
+  border-radius: 15px;
+}
+
+.seccion2 div:hover {
+  background-color: #ab46d2;
+  scale: 1.2;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 160px auto 50px;
+}
+
+.seccion3 {
+  width: 90%;
+  height: 600px;
+  margin-top: 50px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.seccion3 h1 {
+  text-align: center;
+  width: 100%;
+  font-size: 80px;
+}
+
+.seccion3 #video {
+  width: 860px;
+  height: 100%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff39;
+}
+
+/* pagina nosotros */
+.nosotros {
+  width: 90%;
+  height: 600px;
+  margin-top: 50px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nuestra {
+  background-color: #ffffff39;
+  height: 300px;
+  width: 50rem;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  text-align: justify;
+  padding-right: 25px;
+  border: black;
+  border-style: dashed;
+}
+
+.nuestra h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.nosotros_main {
+  height: 1600px;
+}
+
+#n_img {
+  background-image: url(./imagen/llamita2.jpg);
+  width: 100%;
+  height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 30px;
+  margin: 50px;
+}
+
+/* pagina destino */
+.destino img {
+  width: 300px;
+  height: 200px;
+  border: 10px double rgb(128, 128, 128);
+  margin: 20px auto;
+}
+
+.destino {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.destino h1 {
+  text-align: center;
+  width: 100%;
+}
+
+.destino h4 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.destino p {
+  text-align: center;
+  margin: 10px 20px;
+  padding: 0px 20px;
+}
+
+.descripcion {
+  text-align: center;
+  margin-top: 45px;
+  margin-bottom: 0px !important;
+}
+
+.destino .departamentos div {
+  background-color: #ffffff39;
+  border-radius: 15px;
+  display: grid;
+}
+
+#lista_departamentos {
+  display: flex;
+  justify-content: space-between;
+}
+
+#lista_departamentos ul {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+#lista_departamentos ul li {
+  width: 14%;
+  margin: 20px 3%;
+  text-align: center;
+}
+
+.departamentos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 2.5fr 2.5fr 2.5fr 2.5fr 2.5fr;
+  gap: 15px 20px;
+  grid-template-areas:
+    "lisdep lisdep lisdep lisdep lisdep lisdep"
+    "lisdep lisdep lisdep lisdep lisdep lisdep"
+    "depimg1 depimg1 depimg1 dep1 dep1 dep1"
+    "dep2 dep2 dep2 depimg2 depimg2 depimg2"
+    "depimg3 depimg3 depimg3 dep3 dep3 dep3"
+    "dep4 dep4 dep4 depimg4 depimg4 depimg4"
+    "depimg5 depimg5 depimg5 dep5 dep5 dep5";
+}
+
+.lisdep {
+  grid-area: lisdep;
+}
+
+.depimg1 {
+  grid-area: depimg1;
+}
+
+.depimg2 {
+  grid-area: depimg2;
+}
+
+.depimg3 {
+  grid-area: depimg3;
+}
+
+.depimg4 {
+  grid-area: depimg4;
+}
+
+.depimg5 {
+  grid-area: depimg5;
+}
+
+.dep1 {
+  grid-area: dep1;
+}
+
+.dep2 {
+  grid-area: dep2;
+}
+
+.dep3 {
+  grid-area: dep3;
+}
+
+.dep4 {
+  grid-area: dep4;
+}
+
+.dep5 {
+  grid-area: dep5;
+}
+
+/* pagina hoteles */
+
+.reservas {
+  width: 90%;
+  height: 50px;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  background-color: #ffffff39;
+  align-items: center;
+}
+
+.reservas label,
+.reservas input {
+  margin: 0px 10px;
+}
+
+.reservas input {
+  width: 270px;
+  font-size: 15px;
+  background: #ffffff;
+  color: #ab46d2;
+  flex: 1;
+  border-radius: 25px;
+  outline: none;
+  margin: 15px;
+  border: none;
+  padding-left: 15px;
+}
+
+.hoteles {
+  width: 90%;
+  height: 250px;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  background-color: #ffffff39;
+  align-items: center;
+}
+
+/* pagina restaurantes */
+
+.restaurantes {
+  width: 90%;
+  height: 800px;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  background-color: #ffffff39;
+  align-items: center;
+}
+
+.restaurantes h1 {
+  font-size: 300px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.restaurantes p {
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
