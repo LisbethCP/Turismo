@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only --> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="icon" href="../imagen/apple-touch-icon.png">
   <link rel="stylesheet" href="../estilo.css"> 
   <title>Conoce Perú 🦙</title>
@@ -47,54 +50,94 @@
   </header>
 
   <main>
-  <section class="reservas">
-    <div>
-      <form action="">
-        <label for="">Fecha de Inicio</label>
-        <input type="date">
-        <label for="">Fecha Final</label>
-        <input type="date">
-      </form>
-    </div>
-  </section>
-  <section class="hoteles">
-    <div>
-      <table border="1" cellpadding="10px">
-        <tr>
-          <th>Nombre del Hotel</th>
-          <th>Comodidad</th>
-          <th>Servicio</th>
-          <th>Hospitalidad</th>
-        </tr>
-        <tr>
-          <td>Belmond Palacio Nazarenas, Cusco, Perú</td>
-          <td>💛💛💛💛</td>
-          <td>⭐⭐⭐</td>
-          <td>😊😊😊😊</td>
-        </tr>
-        <tr>
-          <td>JW Marriott</td>
-          <td>💛💛💛💛💛</td>
-          <td>⭐⭐⭐⭐</td>
-          <td>😊😊😊</td>
-        </tr>
-        <tr>
-          <td>Hotel Paracas</td>
-          <td>💛💛💛</td>
-          <td>⭐⭐⭐⭐⭐</td>
-          <td>😊😊😊😊</td>
-        </tr>
-        <tr>
-          <td>Sol y Luna</td>
-          <td>💛💛💛</td>
-          <td>⭐⭐⭐</td>
-          <td>😊😊😊😊😊</td>
-        </tr>
-      </table>
+  <section>
+    <div class="hoteles">
+      <div class="titulo animate__animated animate__fadeInDownBig ">
+        <h1>
+          Encuentra Los Mejores Hoteles
+        </h1>
+      </div>
+      <div class="hotel">
+        <img src="../imagen/hotel1.jpg" alt="hotel">
+      </div>
+      <div class="informacion">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde magni voluptas cupiditate aspernatur provident aliquid vero ullam voluptates dolorum exercitationem, nobis vel temporibus facilis a sed doloribus similique, excepturi totam est velit libero assumenda beatae doloremque possimus. Quaerat laudantium, consectetur saepe quo dolor corrupti repellat magni consequatur nisi voluptatibus sed ipsam commodi vitae ad dolorem sunt vel, distinctio quasi harum exercitationem unde sequi? Excepturi, in animi voluptatem cumque atque ipsa. Similique cum eveniet quibusdam ducimus! Minima repellat soluta quam! Dignissimos voluptatibus aliquam ipsa minima odit omnis minus quidem nobis eaque? Alias rem architecto aliquam rerum quos illum. Provident, illum expedita.
+      </div>
+      <div class="imagenes">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../imagen/hotel11.jpg" class="d-block w-100" alt="hotel11">
+            </div>
+            <div class="carousel-item active">
+              <img src="../imagen/hotel2.jpg" class="d-block w-100" alt="hotel2">
+            </div>
+            <div class="carousel-item active">
+              <img src="../imagen/hotel3.jpg" class="d-block w-100" alt="hotel3">
+            </div>
+            <div class="carousel-item">
+              <img src="../imagen/hotel4.webp" class="d-block w-100" alt="hotel4">
+            </div>
+            <div class="carousel-item">
+              <img src="../imagen/hotel5.jpg" class="d-block w-100" alt=".hotel5">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </div>
+      <div class="categorias">
+        <table border="1" cellpadding="10px">
+          <tr>
+            <th>Nombre del Hotel</th>
+            <th>Comodidad</th>
+            <th>Servicio</th>
+            <th>Hospitalidad</th>
+          </tr>
+          <tr>
+            <td>Belmond Palacio Nazarenas, Cusco, Perú</td>
+            <td>💛💛💛💛</td>
+            <td>⭐⭐⭐</td>
+            <td>😊😊😊😊</td>
+          </tr>
+          <tr>
+            <td>JW Marriott</td>
+            <td>💛💛💛💛💛</td>
+            <td>⭐⭐⭐⭐</td>
+            <td>😊😊😊</td>
+          </tr>
+          <tr>
+            <td>Hotel Paracas</td>
+            <td>💛💛💛</td>
+            <td>⭐⭐⭐⭐⭐</td>
+            <td>😊😊😊😊</td>
+          </tr>
+          <tr>
+            <td>Sol y Luna</td>
+            <td>💛💛💛</td>
+            <td>⭐⭐⭐</td>
+            <td>😊😊😊😊😊</td>
+          </tr>
+        </table>
+      </div>
     </div>
   </section>
   </main>
-  
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
   <footer class="main-footer">
     <strong>
       Copyright &copy;2022&nbsp&nbsp

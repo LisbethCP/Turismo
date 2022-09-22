@@ -383,6 +383,10 @@ footer {
   text-align: center;
   margin-bottom: 30px;
 }
+.destino h4:hover
+{
+  transform: scale(1.2,1.7);
+}
 
 .destino p {
   text-align: center;
@@ -480,47 +484,110 @@ footer {
   grid-area: dep5;
 }
 
+@media screen and (max-width:768px)
+{
+  .departamentos
+  {
+  justify-content: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 2.5f;
+  gap: 15px 20px;
+  grid-template-areas:
+    "lisdep"
+    "lisdep"
+    "lisdep"
+    "lisdep"
+    "lisdep"
+    "lisdep"
+    "lisdep"
+    "lisdep"
+    "lisdep"
+    "lisdep"
+    "depimg1"
+    "dep1"
+    "depimg2"
+    "dep2"
+    "depimg3"
+    "dep3"
+    "depimg4"
+    "dep4"
+    "depimg5"
+    "dep5"
+    ;
+  }
+  .destino 
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    margin-left: 5%;
+  }
+  
+  #lista_departamentos ul 
+  {
+    list-style-type: none;
+    width: 100%;
+    display: revert;
+  }
+}
+
 /* pagina hoteles */
 
-.reservas {
-  width: 90%;
-  height: 50px;
-  margin: 50px;
+
+
+.hoteles
+{
   display: flex;
-  justify-content: center;
-  border-radius: 15px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.titulo
+{
+  text-align: center;
+  width: 100%;
+  padding: 30px;
+}
+
+.hoteles .titulo div
+{
   background-color: #ffffff39;
-  align-items: center;
-}
-
-.reservas label,
-.reservas input {
-  margin: 0px 10px;
-}
-
-.reservas input {
-  width: 270px;
-  font-size: 15px;
-  background: #ffffff;
-  color: #ab46d2;
-  flex: 1;
-  border-radius: 25px;
-  outline: none;
-  margin: 15px;
-  border: none;
-  padding-left: 15px;
-}
-
-.hoteles {
-  width: 90%;
-  height: 250px;
-  margin: 50px;
-  display: flex;
-  justify-content: center;
   border-radius: 15px;
-  background-color: #ffffff39;
-  align-items: center;
+  display: grid;
 }
+
+.informacion
+{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hoteles 
+{  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 1.5fr 2fr 1fr;
+  gap: 15px 20px;
+  grid-template-areas:
+    "titulo titulo"
+    "hotel informacion"
+    "imagenes imagenes"
+    "categorias categorias";
+}
+
+.titulo { grid-area: titulo; }
+
+.hotel { grid-area: hotel; }
+
+.informacion { grid-area: informacion; }
+
+.imagenes { grid-area: imagenes; }
+
+.categorias { grid-area: categorias; }
+
 
 /* pagina restaurantes */
 
@@ -545,4 +612,46 @@ footer {
   font-weight: bold;
   width: 100%;
   text-align: center;
+}
+
+/* pagina terrestre */
+
+.terrestre {
+  width: 90%;
+  height: 50px;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  background-color: #ffffff39;
+  align-items: center;
+}
+
+.terrestre label,
+.terrestre input {
+  margin: 0px 10px;
+}
+
+.terrestre input {
+  width: 270px;
+  font-size: 15px;
+  background: #ffffff;
+  color: #ab46d2;
+  flex: 1;
+  border-radius: 25px;
+  outline: none;
+  margin: 15px;
+  border: none;
+  padding-left: 15px;
+}
+
+.buses {
+  width: 90%;
+  height: 250px;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  background-color: #ffffff39;
+  align-items: center;
 }
