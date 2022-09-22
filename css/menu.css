@@ -1,0 +1,89 @@
+@media screen and (max-width:768px)
+{
+  nav {
+    width: 90%;
+    height: 60px;
+    margin: 20px auto;
+    background-color: rgb(194, 16, 16);
+    border-radius: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo a img {
+    width: 70px;
+    height: 60px;
+    margin-left: 15px;
+  }
+  
+  .menu {
+    list-style-type: none;
+    background-color: #ffffff;
+    border-radius: 45px;
+    padding: 0;
+    width: 75%;
+    margin: 20px 0px;
+  }
+  
+  .menu .item {
+    display: inline-block;
+    position: relative;
+    font-size: 0.5rem;
+    text-align: center;
+  }
+  
+  .menu .submenu {
+    position: absolute;
+    display: none;
+    width: 149px;
+  }
+  
+  .menu .submenu a {
+    width: 100%;
+    color: white !important;
+  }
+  
+  .menu .submenu .sub_m {
+    display: block;
+    font-size: 0.8rem;
+    padding: auto;
+  }
+  
+  .menu .item a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bolder;
+    display: inline-block;
+    padding: 5px;
+  }
+  
+  .menu .item a:hover {
+    color: white;
+  }
+  
+  .menu .item:hover .submenu {
+    display: block;
+    color: rgb(13, 14, 9);
+  }
+  
+  .menu .item:hover a {
+    background-color: rgb(194, 16, 16);
+    border-radius: 45px;
+  }
+  
+  nav .buscador {
+    display: none;
+
+  }
+  
+  #barra_busqueda {
+
+    display: none;
+
+  }
+  
+  
+  
+}
