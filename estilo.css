@@ -60,6 +60,7 @@ nav {
   padding: 0;
   width: 60%;
   margin: 20px auto;
+  z-index: 1;
 }
 
 .menu .item {
