@@ -1,55 +1,5 @@
-@media screen and (max-width:768px) {
-  
-.hoteles
-{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 80%;
+#seccion_hoteles {
+  width: 90%;
+  background: aqua;
   margin: 0 auto;
-}
-
-.titulo
-{
-  text-align: center;
-  width: 100%;
-  padding: 30px;
-}
-
-.hoteles .titulo div
-{
-  background-color: #ffffff39;
-  border-radius: 15px;
-  display: grid;
-}
-
-.informacion
-{
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.hoteles 
-{  
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.5fr 1.5fr 2fr 1fr;
-  gap: 15px 20px;
-  grid-template-areas:
-    "titulo titulo"
-    "hotel informacion"
-    "imagenes imagenes"
-    "categorias categorias";
-}
-
-.titulo { grid-area: titulo; }
-
-.hotel { grid-area: hotel; }
-
-.informacion { grid-area: informacion; }
-
-.imagenes { grid-area: imagenes; }
-
-.categorias { grid-area: categorias; }
-
-}
+}/*# sourceMappingURL=hoteles.css.map */

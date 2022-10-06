@@ -4,13 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Somos una empresa que busca la satisfación del Turista, brindando lo mejor del Perú profundo y moderno, llevando experiencia de aventura y cutlura a un nuevo nivel">
+  <meta name="keywords"  content="TURISMO, AVENTURA, PERU">
   <!-- CSS only --> 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/css-bootstrap.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="icon" href="../imagen/apple-touch-icon.png">
+  <link rel="stylesheet" href="../sass/hoteles.css"> 
   <link rel="stylesheet" href="../estilo.css"> 
   <link rel="stylesheet" href="../css/menu.css">
-  <title>Conoce Perú 🦙</title>
+  <title>Conoce Perú 🦙 Hoteles</title>
 </head>
 <body>
   <header>
@@ -51,23 +54,17 @@
   </header>
 
   <main>
-  <section>
-    <div class="hoteles">
-      <div class="titulo animate__animated animate__fadeInDownBig ">
-        <h1>
-          Encuentra Los Mejores Hoteles
-        </h1>
-      </div>
-      <div class="hotel">
+  <section id="seccion_hoteles">
+    <div class="row">
+      <div class="imagen col-12 col-md-6">
         <img src="../imagen/hotel1.jpg" alt="hotel">
       </div>
-      <div class="informacion">
+      <div class="texto col-12 col-md-6">
         Skylodge Adventure Suites en Perú es un hotel colgante completamente transparente que te permite apreciar la impactante vista sobre el mágico Valle Sagrado de los Incas en Cuzco. Uno de sus grandes atractivos es que cuenta con habitaciones en forma de cápsulas transparentes. Es por esta razón que este hotel ofrece experiencias única y llenas de adrenalina.
-        
+          
         Para llegar al hotel sólo existen dos acceso. La primera es por la vía ferrata en la que tienes que cruzar un puente colgante. Por este camino incluye escalar 400 metros utilizando peldaños metálicos anclados en la roca y el descenso se realiza haciendo rapel. La segunda opción es por medio de la tirolesa.
-        
       </div>
-      <div class="imagenes">
+      <div class="carousel_img col-12 col-md-12">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -102,43 +99,9 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-
-      </div>
-      <div class="categorias">
-        <table border="1" cellpadding="10px">
-          <tr>
-            <th>Nombre del Hotel</th>
-            <th>Comodidad</th>
-            <th>Servicio</th>
-            <th>Hospitalidad</th>
-          </tr>
-          <tr>
-            <td>Belmond Palacio Nazarenas, Cusco, Perú</td>
-            <td>💛💛💛💛</td>
-            <td>⭐⭐⭐</td>
-            <td>😊😊😊😊</td>
-          </tr>
-          <tr>
-            <td>JW Marriott</td>
-            <td>💛💛💛💛💛</td>
-            <td>⭐⭐⭐⭐</td>
-            <td>😊😊😊</td>
-          </tr>
-          <tr>
-            <td>Hotel Paracas</td>
-            <td>💛💛💛</td>
-            <td>⭐⭐⭐⭐⭐</td>
-            <td>😊😊😊😊</td>
-          </tr>
-          <tr>
-            <td>Sol y Luna</td>
-            <td>💛💛💛</td>
-            <td>⭐⭐⭐</td>
-            <td>😊😊😊😊😊</td>
-          </tr>
-        </table>
       </div>
     </div>
+    
   </section>
   </main>
   <!-- JavaScript Bundle with Popper -->

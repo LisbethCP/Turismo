@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -9,14 +8,22 @@
 
 body {
   min-height: 100vh;
-  background: linear-gradient(
-    to right,
-    rgb(221, 74, 72),
-    rgb(245, 238, 220),
-    rgb(221, 74, 72)
-  );
+  background: linear-gradient(to right, rgb(221, 74, 72), rgb(245, 238, 220), rgb(221, 74, 72));
   background-size: 400% 400%;
-  animation: animate-background 10s infinite ease-in-out;
+  -webkit-animation: animate-background 10s infinite ease-in-out;
+          animation: animate-background 10s infinite ease-in-out;
+}
+
+@-webkit-keyframes animate-background {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
 
 @keyframes animate-background {
@@ -30,7 +37,6 @@ body {
     background-position: 0 50%;
   }
 }
-
 nav {
   width: 90%;
   height: 100px;
@@ -62,25 +68,21 @@ nav {
   margin: 20px auto;
   z-index: 1;
 }
-
 .menu .item {
   display: inline-block;
   position: relative;
   font-size: 1.2rem;
   text-align: center;
 }
-
 .menu .submenu {
   position: absolute;
   display: none;
   width: 149px;
 }
-
 .menu .submenu a {
   width: 100%;
   color: white !important;
 }
-
 .menu .submenu .sub_m {
   display: block;
   font-size: 0.8rem;
@@ -159,7 +161,7 @@ nav .buscador {
 }
 
 #caja1 {
-  background-color: #ffffff39;
+  background-color: rgba(255, 255, 255, 0.2235294118);
   height: 500px;
   width: 50rem;
   border-radius: 25px;
@@ -198,7 +200,7 @@ nav .buscador {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ffffff39;
+  background-color: rgba(255, 255, 255, 0.2235294118);
   border-radius: 25px;
 }
 
@@ -269,13 +271,13 @@ nav .buscador {
 }
 
 .seccion2 div {
-  background-color: #ffffff39;
+  background-color: rgba(255, 255, 255, 0.2235294118);
   margin: 20px 10px;
   border-radius: 15px;
 }
 
 .seccion2 div:hover {
-  background-color: #ab46d2;
+  background-color: #f3a839;
   scale: 1.2;
 }
 
@@ -309,9 +311,24 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff39;
+  background-color: rgba(255, 255, 255, 0.2235294118);
 }
 
+@media screen and (max-width: 768px) {
+  .seccion1 {
+    margin-bottom: 400px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .seccion1 #caja1 {
+    width: 45rem;
+  }
+  .seccion1 #formulario {
+    margin-top: 30px;
+  }
+}
 /* pagina nosotros */
 .nosotros {
   width: 90%;
@@ -324,7 +341,7 @@ footer {
 }
 
 .nuestra {
-  background-color: #ffffff39;
+  background-color: rgba(255, 255, 255, 0.2235294118);
   height: 300px;
   width: 50rem;
   border-radius: 25px;
@@ -337,7 +354,6 @@ footer {
   border: black;
   border-style: dashed;
 }
-
 .nuestra h1 {
   width: 100%;
   text-align: center;
@@ -384,9 +400,9 @@ footer {
   text-align: center;
   margin-bottom: 30px;
 }
-.destino h4:hover
-{
-  transform: scale(1.2,1.7);
+
+.destino h4:hover {
+  transform: scale(1.2, 1.7);
 }
 
 .destino p {
@@ -402,7 +418,7 @@ footer {
 }
 
 .destino .departamentos div {
-  background-color: #ffffff39;
+  background-color: rgba(255, 255, 255, 0.2235294118);
   border-radius: 15px;
   display: grid;
 }
@@ -417,7 +433,6 @@ footer {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  
 }
 
 #lista_departamentos ul li {
@@ -431,14 +446,7 @@ footer {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 2.5fr 2.5fr 2.5fr 2.5fr 2.5fr;
   gap: 15px 20px;
-  grid-template-areas:
-    "lisdep lisdep lisdep lisdep lisdep lisdep"
-    "lisdep lisdep lisdep lisdep lisdep lisdep"
-    "depimg1 depimg1 depimg1 dep1 dep1 dep1"
-    "dep2 dep2 dep2 depimg2 depimg2 depimg2"
-    "depimg3 depimg3 depimg3 dep3 dep3 dep3"
-    "dep4 dep4 dep4 depimg4 depimg4 depimg4"
-    "depimg5 depimg5 depimg5 dep5 dep5 dep5";
+  grid-template-areas: "lisdep lisdep lisdep lisdep lisdep lisdep" "lisdep lisdep lisdep lisdep lisdep lisdep" "depimg1 depimg1 depimg1 dep1 dep1 dep1" "dep2 dep2 dep2 depimg2 depimg2 depimg2" "depimg3 depimg3 depimg3 dep3 dep3 dep3" "dep4 dep4 dep4 depimg4 depimg4 depimg4" "depimg5 depimg5 depimg5 dep5 dep5 dep5";
 }
 
 .lisdep {
@@ -485,113 +493,29 @@ footer {
   grid-area: dep5;
 }
 
-@media screen and (max-width:768px)
-{
-  .departamentos
-  {
-  justify-content: center;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 2.5f;
-  gap: 15px 20px;
-  grid-template-areas:
-    "lisdep"
-    "lisdep"
-    "lisdep"
-    "lisdep"
-    "lisdep"
-    "lisdep"
-    "lisdep"
-    "lisdep"
-    "lisdep"
-    "lisdep"
-    "depimg1"
-    "dep1"
-    "depimg2"
-    "dep2"
-    "depimg3"
-    "dep3"
-    "depimg4"
-    "dep4"
-    "depimg5"
-    "dep5"
-    ;
+@media screen and (max-width: 768px) {
+  .departamentos {
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 2.5f;
+    gap: 15px 20px;
+    grid-template-areas: "lisdep" "lisdep" "lisdep" "lisdep" "lisdep" "lisdep" "lisdep" "lisdep" "lisdep" "lisdep" "depimg1" "dep1" "depimg2" "dep2" "depimg3" "dep3" "depimg4" "dep4" "depimg5" "dep5";
   }
-  .destino 
-  {
+  .destino {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 90%;
     margin-left: 5%;
   }
-  
-  #lista_departamentos ul 
-  {
+  #lista_departamentos ul {
     list-style-type: none;
     width: 100%;
     display: revert;
   }
 }
-
 /* pagina hoteles */
-
-
-
-.hoteles
-{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 80%;
-  margin: 0 auto;
-}
-
-.titulo
-{
-  text-align: center;
-  width: 100%;
-  padding: 30px;
-}
-
-.hoteles .titulo div
-{
-  background-color: #ffffff39;
-  border-radius: 15px;
-  display: grid;
-}
-
-.informacion
-{
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.hoteles 
-{  
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.5fr 1.5fr 2fr 1fr;
-  gap: 15px 20px;
-  grid-template-areas:
-    "titulo titulo"
-    "hotel informacion"
-    "imagenes imagenes"
-    "categorias categorias";
-}
-
-.titulo { grid-area: titulo; }
-
-.hotel { grid-area: hotel; }
-
-.informacion { grid-area: informacion; }
-
-.imagenes { grid-area: imagenes; }
-
-.categorias { grid-area: categorias; }
-
-
 /* pagina restaurantes */
-
 .restaurantes {
   width: 90%;
   height: 800px;
@@ -599,7 +523,7 @@ footer {
   display: flex;
   justify-content: center;
   border-radius: 15px;
-  background-color: #ffffff39;
+  background-color: rgba(255, 255, 255, 0.2235294118);
   align-items: center;
 }
 
@@ -616,7 +540,6 @@ footer {
 }
 
 /* pagina terrestre */
-
 .terrestre {
   width: 90%;
   height: 50px;
@@ -624,7 +547,7 @@ footer {
   display: flex;
   justify-content: center;
   border-radius: 15px;
-  background-color: #ffffff39;
+  background-color: rgba(255, 255, 255, 0.2235294118);
   align-items: center;
 }
 
@@ -653,6 +576,6 @@ footer {
   display: flex;
   justify-content: center;
   border-radius: 15px;
-  background-color: #ffffff39;
+  background-color: rgba(255, 255, 255, 0.2235294118);
   align-items: center;
-}
+}/*# sourceMappingURL=estilo.css.map */
